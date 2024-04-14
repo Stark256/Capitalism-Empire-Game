@@ -7,20 +7,20 @@ import moe.tlaster.precompose.navigation.transition.NavTransition
 
 const val splashNavigationRoute = "splash_screen_route"
 
-fun RouteBuilder.splashScreen(navigateToMainScreen: () -> Unit) {
+fun RouteBuilder.splashScreen(navigateToHomeScreen: () -> Unit) {
     scene(
         route = splashNavigationRoute,
         navTransition = NavTransition()
     ) {
-        SplashScreenRoute(navigateToMainScreen)
+        SplashScreenRoute(navigateToHomeScreen)
     }
 }
 
 @Composable
 fun SplashScreenRoute(
-    navigateToMainScreen: () -> Unit
+    navigateToHomeScreen: () -> Unit
 ) {
     SplashScreen(
-        navigateToMainScreen = navigateToMainScreen
+        navigateToHomeScreen = navigateToHomeScreen
     )
 }

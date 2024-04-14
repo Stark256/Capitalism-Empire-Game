@@ -14,13 +14,13 @@ import moe.tlaster.precompose.koin.koinViewModel
 @Composable
 fun SplashScreen(
     modifier: Modifier = Modifier,
-    navigateToMainScreen: () -> Unit,
+    navigateToHomeScreen: () -> Unit,
     viewModel: SplashViewModel = koinViewModel(SplashViewModel::class)
 ) {
     val uiState by viewModel.uiState.collectAsState()
 
     if(uiState.showMainScreen) {
-        navigateToMainScreen.invoke()
+        navigateToHomeScreen.invoke()
     }
 
     Column(

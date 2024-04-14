@@ -35,7 +35,8 @@ kotlin {
         }
         commonMain.dependencies {
             // Modules
-            implementation(projects.splash)
+            api(projects.splash)
+            api(projects.home)
             // Compose
             implementation(compose.runtime)
             implementation(compose.foundation)

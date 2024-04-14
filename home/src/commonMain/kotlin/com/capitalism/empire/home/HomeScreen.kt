@@ -1,3 +1,5 @@
+package com.capitalism.empire.home
+
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
