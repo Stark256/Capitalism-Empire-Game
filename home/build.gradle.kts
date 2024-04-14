@@ -7,7 +7,7 @@ plugins {
 kotlin {
     jvm()
     task("testClasses")
-    
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -43,7 +43,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.capitalism.empire.splash"
+    namespace = "com.capitalism.empire.home"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()

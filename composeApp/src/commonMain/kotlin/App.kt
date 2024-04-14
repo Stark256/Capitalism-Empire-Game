@@ -1,5 +1,7 @@
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import com.capitalism.empire.home.homeScreen
+import com.capitalism.empire.home.navigateToHomeScreen
 import com.capitalism.empire.splash.splashNavigationRoute
 import com.capitalism.empire.splash.splashScreen
 import moe.tlaster.precompose.PreComposeApp
@@ -28,12 +30,12 @@ fun NavigationHost() {
         initialRoute = splashNavigationRoute
     ) {
         splashScreen(
-            navigateToMainScreen = {
-                navigateToMainScreen(navigator)
+            navigateToHomeScreen = {
+                navigateToHomeScreen(navigator)
             }
         )
 
-        mainScreen()
+        homeScreen()
     }
 }
 
