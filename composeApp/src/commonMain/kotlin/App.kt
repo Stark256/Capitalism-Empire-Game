@@ -1,13 +1,8 @@
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
-import com.capitalism.empire.home.homeScreen
-import com.capitalism.empire.home.navigateToHomeScreen
-import com.capitalism.empire.splash.splashNavigationRoute
-import com.capitalism.empire.splash.splashScreen
+import com.capitalism.empire.home.HomeScreen
+import com.capitalism.empire.splash.SplashScreen
 import moe.tlaster.precompose.PreComposeApp
-import moe.tlaster.precompose.navigation.NavHost
-import moe.tlaster.precompose.navigation.rememberNavigator
-import moe.tlaster.precompose.navigation.transition.NavTransition
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
@@ -22,20 +17,10 @@ fun App() {
 
 @Composable
 fun NavigationHost() {
-    val navigator = rememberNavigator()
-
-    NavHost(
-        navigator = navigator,
-        navTransition = NavTransition(),
-        initialRoute = splashNavigationRoute
-    ) {
-        splashScreen(
-            navigateToHomeScreen = {
-                navigateToHomeScreen(navigator)
-            }
-        )
-
-        homeScreen()
-    }
+    SplashScreen(
+        navigateToHomeScreen = {
+            HomeScreen()
+        }
+    )
 }
 
