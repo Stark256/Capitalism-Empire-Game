@@ -19,5 +19,13 @@ dependencyResolutionManagement {
 }
 
 include(":composeApp")
-include(":splash")
-include(":home")
+// Core
+include(":core:ui")
+// Feature
+include(":feature:splash")
+include(":feature:home")
+include(":feature:investing")
+include(":feature:business")
+include(":feature:wallet")
+include(":feature:collections")
+include(":feature:profile")
