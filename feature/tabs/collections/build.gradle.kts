@@ -18,16 +18,12 @@ kotlin {
         commonMain.dependencies {
             // Modules
             api(project(":core:ui"))
+            // Compose
             // Koin
             implementation(libs.koin.core)
             implementation(libs.koin.compose)
-            // ViewModel
-            implementation(libs.mvvm.core)
-            implementation(libs.mvvm.compose)
-            implementation(libs.mvvm.flow)
-            implementation(libs.mvvm.flow.compose)
             // Navigation
-            implementation(libs.precompose)
+            implementation(libs.precompose.core)
             implementation(libs.precompose.viewmodel)
             implementation(libs.precompose.koin)
         }
@@ -38,7 +34,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.capitalism.empire.wallet"
+    namespace = "com.capitalism.empire.collections"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
