@@ -17,22 +17,17 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             // Modules
-            api(project(":feature:investing"))
-            api(project(":feature:business"))
-            api(project(":feature:wallet"))
-            api(project(":feature:collections"))
-            api(project(":feature:profile"))
+            api(project(":feature:tabs:investing"))
+            api(project(":feature:tabs:business"))
+            api(project(":feature:tabs:wallet"))
+            api(project(":feature:tabs:collections"))
+            api(project(":feature:tabs:profile"))
             api(project(":core:ui"))
             // Koin
             implementation(libs.koin.core)
             implementation(libs.koin.compose)
-            // ViewModel
-            implementation(libs.mvvm.core)
-            implementation(libs.mvvm.compose)
-            implementation(libs.mvvm.flow)
-            implementation(libs.mvvm.flow.compose)
             // Navigation
-            implementation(libs.precompose)
+            implementation(libs.precompose.core)
             implementation(libs.precompose.viewmodel)
             implementation(libs.precompose.koin)
         }

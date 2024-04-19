@@ -40,13 +40,9 @@ kotlin {
             // Koin
             implementation(libs.koin.core)
             implementation(libs.koin.compose)
-            // ViewModel
-            implementation(libs.mvvm.core)
-            implementation(libs.mvvm.compose)
-            implementation(libs.mvvm.flow)
-            implementation(libs.mvvm.flow.compose)
             // Navigation
-            implementation(libs.precompose)
+            implementation(libs.precompose.core)
+
         }
 
     }
