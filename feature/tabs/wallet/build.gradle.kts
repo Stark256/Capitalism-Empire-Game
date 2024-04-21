@@ -18,6 +18,8 @@ kotlin {
         commonMain.dependencies {
             // Modules
             api(project(":core:ui"))
+            // Features
+            implementation(project(":feature:wallet:cards"))
             // Koin
             implementation(libs.koin.core)
             implementation(libs.koin.compose)
@@ -39,7 +41,7 @@ android {
         minSdk = libs.versions.android.minSdk.get().toInt()
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_19
+        targetCompatibility = JavaVersion.VERSION_19
     }
 }

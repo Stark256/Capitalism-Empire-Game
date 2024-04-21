@@ -29,3 +29,13 @@ include(":feature:tabs:business")
 include(":feature:tabs:wallet")
 include(":feature:tabs:collections")
 include(":feature:tabs:profile")
+// Investing
+
+// Business
+
+// Wallet
+include(":feature:wallet:cards")
+
+// Collections
+
+// Profile

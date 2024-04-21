@@ -10,9 +10,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import com.capitalism.empire.cards.CreditCardsList
 import moe.tlaster.precompose.koin.koinViewModel
+import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
+@Preview
 fun WalletScreen(
     bottomBarPaddings: PaddingValues,
     modifier: Modifier = Modifier,
@@ -22,9 +25,10 @@ fun WalletScreen(
 
     Column(
         modifier = modifier.fillMaxSize().padding(paddings),
-        verticalArrangement = Arrangement.Center,
+        verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Text(text = "Wallet Screen")
+        CreditCardsList()
     }
 }
