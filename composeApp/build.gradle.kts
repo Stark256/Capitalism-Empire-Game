@@ -89,10 +89,10 @@ fun KotlinMultiplatformExtension.commonMainSourceSets() {
                 api(project(":feature:splash"))
                 api(project(":feature:home"))
                 // Koin
-                implementation(libs.koin.core)
-                implementation(libs.koin.compose)
+                implementation(koin.bundles.all)
+
                 // Navigation
-                implementation(libs.precompose.core)
+                implementation(precompose.bundles.all)
             }
         }
     }

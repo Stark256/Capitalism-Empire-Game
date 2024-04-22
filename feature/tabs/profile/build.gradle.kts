@@ -45,12 +45,9 @@ fun KotlinMultiplatformExtension.commonMainSourceSets() {
                 // Modules
                 api(project(":core:ui"))
                 // Koin
-                implementation(libs.koin.core)
-                implementation(libs.koin.compose)
+                implementation(koin.bundles.all)
                 // Navigation
-                implementation(libs.precompose.core)
-                implementation(libs.precompose.viewmodel)
-                implementation(libs.precompose.koin)
+                implementation(precompose.bundles.all)
             }
         }
     }

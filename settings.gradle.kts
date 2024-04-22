@@ -16,6 +16,18 @@ dependencyResolutionManagement {
         mavenCentral()
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
     }
+
+    versionCatalogs {
+        create("koin") {
+            from(files("gradle/koin.versions.toml"))
+        }
+        create("precompose") {
+            from(files("gradle/precompose.versions.toml"))
+        }
+        create("moko") {
+            from(files("gradle/moko.versions.toml"))
+        }
+    }
 }
 
 include(":composeApp")
