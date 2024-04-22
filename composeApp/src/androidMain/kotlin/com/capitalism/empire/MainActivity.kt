@@ -1,4 +1,4 @@
-package org.capitalizm.empire
+package com.capitalism.empire
 
 import App
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import org.capitalizm.empire.di.initKoin
+import com.capitalism.empire.di.initKoin
 import org.koin.compose.KoinApplication
 
 class MainActivity : ComponentActivity() {
