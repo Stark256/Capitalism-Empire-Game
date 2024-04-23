@@ -19,7 +19,6 @@ import com.capitalism.empire.investing.navigation.navigateToInvestingScreen
 import com.capitalism.empire.profile.navigation.navigateToProfileScreen
 import com.capitalism.empire.profile.navigation.profileScreenGraph
 import com.capitalism.empire.ui.BottomBar
-import com.capitalism.empire.ui.BottomBarMenuItem
 import com.capitalism.empire.ui.MenuItemsList
 import com.capitalism.empire.wallet.navigation.navigateToWalletScreen
 import com.capitalism.empire.wallet.navigation.walletScreenGraph
@@ -46,7 +45,7 @@ fun HomeScreen(
     val currentEntry = navigator.currentEntry.collectAsState(initial = null)
     val showBottomBar = currentEntry.value?.route?.route !in notShowBottomBar
 
-    val currentBottomBarMenuItem = remember { mutableStateOf(BottomBarMenuItem.WALLET) }
+    val currentBottomBarMenuItem = remember { mutableStateOf(viewModel.bottomBarMenuItems.defaultMenuItem) }
 
     Scaffold(
         modifier = modifier,
@@ -57,27 +56,27 @@ fun HomeScreen(
                 exit = slideOutVertically(targetOffsetY = { it })
             ) {
                 BottomBar(
-                    menuItems = MenuItemsList(BottomBarMenuItem.entries),
+                    menuItems = MenuItemsList(viewModel.bottomBarMenuItems.menuItems),
                     onMenuItemClicked = { menuItem ->
                         currentBottomBarMenuItem.value = menuItem
                         when (menuItem) {
-                            BottomBarMenuItem.INVESTING -> {
+                            viewModel.bottomBarMenuItems.INVESTING -> {
                                 navigator.navigateToInvestingScreen()
                             }
 
-                            BottomBarMenuItem.BUSINESS -> {
+                            viewModel.bottomBarMenuItems.BUSINESS -> {
                                 navigator.navigateToBusinessScreen()
                             }
 
-                            BottomBarMenuItem.WALLET -> {
+                            viewModel.bottomBarMenuItems.WALLET -> {
                                 navigator.navigateToWalletScreen()
                             }
 
-                            BottomBarMenuItem.COLLECTION -> {
+                            viewModel.bottomBarMenuItems.COLLECTIONS -> {
                                 navigator.navigateToCollectionsScreen()
                             }
 
-                            BottomBarMenuItem.PROFILE -> {
+                            viewModel.bottomBarMenuItems.PROFILE -> {
                                 navigator.navigateToProfileScreen()
                             }
                         }

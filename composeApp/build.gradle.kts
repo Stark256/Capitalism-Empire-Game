@@ -1,4 +1,3 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
 
 plugins {
@@ -93,6 +92,8 @@ fun KotlinMultiplatformExtension.commonMainSourceSets() {
 
                 // Navigation
                 implementation(precompose.bundles.all)
+                // Resources
+                implementation(compose.components.resources)
             }
         }
     }
