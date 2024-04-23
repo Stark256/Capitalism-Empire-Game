@@ -105,7 +105,6 @@ fun KotlinMultiplatformExtension.iosMainSourceSets() {
         val iosSimulatorArm64Main by getting
         val iosMain by creating {
             dependsOn(commonMain.get())
-            dependsOn(commonMain.get())
             iosX64Main.dependsOn(this)
             iosArm64Main.dependsOn(this)
             iosSimulatorArm64Main.dependsOn(this)
