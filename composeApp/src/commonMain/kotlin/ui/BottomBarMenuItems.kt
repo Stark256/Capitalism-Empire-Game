@@ -32,14 +32,4 @@ object BottomBarMenuItems: BottomBarItems {
         iconId = Res.drawable.ic_profile,
         textId = Res.string.home_menu_item_profile
     )
-
-    override val defaultMenuItem = WALLET
-
-    override val menuItems = listOf(
-        INVESTING,
-        BUSINESS,
-        WALLET,
-        COLLECTIONS,
-        PROFILE
-    )
 }

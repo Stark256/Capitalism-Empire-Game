@@ -16,7 +16,4 @@ interface BottomBarItems {
    val WALLET: BottomBarMenuItem
    val COLLECTIONS: BottomBarMenuItem
    val PROFILE: BottomBarMenuItem
-
-   val menuItems: List<BottomBarMenuItem>
-   val defaultMenuItem: BottomBarMenuItem
 }

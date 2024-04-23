@@ -45,7 +45,7 @@ fun HomeScreen(
     val currentEntry = navigator.currentEntry.collectAsState(initial = null)
     val showBottomBar = currentEntry.value?.route?.route !in notShowBottomBar
 
-    val currentBottomBarMenuItem = remember { mutableStateOf(viewModel.bottomBarMenuItems.defaultMenuItem) }
+    val currentBottomBarMenuItem = remember { mutableStateOf(viewModel.defaultMenuItem) }
 
     Scaffold(
         modifier = modifier,
@@ -56,27 +56,27 @@ fun HomeScreen(
                 exit = slideOutVertically(targetOffsetY = { it })
             ) {
                 BottomBar(
-                    menuItems = MenuItemsList(viewModel.bottomBarMenuItems.menuItems),
+                    menuItems = MenuItemsList(viewModel.bottomMenuItems),
                     onMenuItemClicked = { menuItem ->
                         currentBottomBarMenuItem.value = menuItem
                         when (menuItem) {
-                            viewModel.bottomBarMenuItems.INVESTING -> {
+                            viewModel.investingMenuItem -> {
                                 navigator.navigateToInvestingScreen()
                             }
 
-                            viewModel.bottomBarMenuItems.BUSINESS -> {
+                            viewModel.businessMenuItem -> {
                                 navigator.navigateToBusinessScreen()
                             }
 
-                            viewModel.bottomBarMenuItems.WALLET -> {
+                            viewModel.walletMenuItem -> {
                                 navigator.navigateToWalletScreen()
                             }
 
-                            viewModel.bottomBarMenuItems.COLLECTIONS -> {
+                            viewModel.collectionsMenuItem -> {
                                 navigator.navigateToCollectionsScreen()
                             }
 
-                            viewModel.bottomBarMenuItems.PROFILE -> {
+                            viewModel.profileMenuItem -> {
                                 navigator.navigateToProfileScreen()
                             }
                         }
