@@ -24,9 +24,6 @@ dependencyResolutionManagement {
         create("precompose") {
             from(files("gradle/precompose.versions.toml"))
         }
-        create("moko") {
-            from(files("gradle/moko.versions.toml"))
-        }
     }
 }
 
