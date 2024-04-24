@@ -1,0 +1,14 @@
+[versions]
+koinVersion = "3.5.6"
+koinComposeVersion = "1.1.5"
+
+[libraries]
+koinCore = { module = "io.insert-koin:koin-core", version.ref = "koinVersion" }
+koinCompose = { module = "io.insert-koin:koin-compose", version.ref = "koinComposeVersion"}
+koinTest = { module = "io.insert-koin:koin-test", version.ref = "koinVersion" }
+
+[bundles]
+all = [
+    "koinCore",
+    "koinCompose"
+]

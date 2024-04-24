@@ -1,4 +1,4 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
+import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -28,28 +28,14 @@ kotlin {
     }
     
     sourceSets {
-        
-        androidMain.dependencies {
-            implementation(libs.compose.ui.tooling.preview)
-            implementation(libs.androidx.activity.compose)
-        }
-        commonMain.dependencies {
-            // Modules
-            api(project(":feature:splash"))
-            api(project(":feature:home"))
-            // Koin
-            implementation(libs.koin.core)
-            implementation(libs.koin.compose)
-            // Navigation
-            implementation(libs.precompose.core)
-
-        }
-
+        androidMainSourceSets()
+        commonMainSourceSets()
+        iosMainSourceSets()
     }
 }
 
 android {
-    namespace = "org.capitalizm.empire"
+    namespace = "com.capitalism.empire"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
@@ -57,7 +43,7 @@ android {
     sourceSets["main"].resources.srcDirs("src/commonMain/resources")
 
     defaultConfig {
-        applicationId = "org.capitalizm.empire"
+        applicationId = "com.capitalism.empire"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
@@ -82,3 +68,47 @@ android {
     }
 }
 
+fun KotlinMultiplatformExtension.androidMainSourceSets() {
+    sourceSets {
+        val androidMain by getting {
+            dependsOn(commonMain.get())
+            dependencies {
+                implementation(libs.compose.ui.tooling.preview)
+                implementation(libs.androidx.activity.compose)
+            }
+        }
+    }
+}
+
+fun KotlinMultiplatformExtension.commonMainSourceSets() {
+    sourceSets {
+        commonMain {
+            dependencies {
+                // Modules
+                api(project(":feature:splash"))
+                api(project(":feature:home"))
+                // Koin
+                implementation(koin.bundles.all)
+
+                // Navigation
+                implementation(precompose.bundles.all)
+                // Resources
+                implementation(compose.components.resources)
+            }
+        }
+    }
+}
+
+fun KotlinMultiplatformExtension.iosMainSourceSets() {
+    sourceSets {
+        val iosX64Main by getting
+        val iosArm64Main by getting
+        val iosSimulatorArm64Main by getting
+        val iosMain by creating {
+            dependsOn(commonMain.get())
+            iosX64Main.dependsOn(this)
+            iosArm64Main.dependsOn(this)
+            iosSimulatorArm64Main.dependsOn(this)
+        }
+    }
+}

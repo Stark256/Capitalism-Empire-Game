@@ -1,7 +1,7 @@
-package org.capitalizm.empire.di
+package com.capitalism.empire.di
 
 import di.customizeKoinApplication
-import org.capitalizm.empire.MainActivity
+import com.capitalism.empire.MainActivity
 import org.koin.dsl.KoinAppDeclaration
 import org.koin.dsl.module
 

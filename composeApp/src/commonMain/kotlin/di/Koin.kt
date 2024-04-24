@@ -23,6 +23,7 @@ fun customizeKoinApplication(customModule: Module): KoinAppDeclaration {
 
 fun appModule(module: Module) = listOf(
     module,
+    mainModule,
     splashModule,
     homeModule,
     // Bottom Tabs
