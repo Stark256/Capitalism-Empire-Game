@@ -8,8 +8,9 @@ import kotlinx.coroutines.launch
 import moe.tlaster.precompose.viewmodel.ViewModel
 import moe.tlaster.precompose.viewmodel.viewModelScope
 
-
-data class SplashUiState(val showMainScreen: Boolean = false)
+data class SplashUiState(
+    val showMainScreen: Boolean = false
+)
 
 class SplashViewModel: ViewModel() {
     private val _uiState = MutableStateFlow(SplashUiState())

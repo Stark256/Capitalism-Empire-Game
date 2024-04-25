@@ -30,21 +30,15 @@ dependencyResolutionManagement {
 include(":composeApp")
 // Core
 include(":core:ui")
+// Data
+include(":data:wallet")
+// Domain
+include(":domain:wallet")
 // Feature
 include(":feature:splash")
 include(":feature:home")
-include(":feature:tabs:investing")
-include(":feature:tabs:business")
-include(":feature:tabs:wallet")
-include(":feature:tabs:collections")
-include(":feature:tabs:profile")
-// Investing
-
-// Business
-
-// Wallet
-include(":feature:wallet:cards")
-
-// Collections
-
-// Profile
+include(":feature:investing")
+include(":feature:business")
+include(":feature:wallet")
+include(":feature:collections")
+include(":feature:profile")

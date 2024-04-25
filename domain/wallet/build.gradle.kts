@@ -3,20 +3,19 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
-    alias(libs.plugins.jetbrainsCompose)
 }
 
 kotlin {
     jvm()
     task("testClasses")
-
+    
     listOf(
         iosX64(),
         iosArm64(),
         iosSimulatorArm64()
-    ).forEach { iosTarget ->
-        iosTarget.binaries.framework {
-            baseName = "feature_home"
+    ).forEach {
+        it.binaries.framework {
+            baseName = "domain_wallet"
             isStatic = true
         }
     }
@@ -27,7 +26,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.capitalism.empire.home"
+    namespace = "com.capitalism.empire.wallet"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
@@ -43,16 +42,8 @@ fun KotlinMultiplatformExtension.commonMainSourceSets() {
         commonMain {
             dependencies {
                 // Modules
-                api(project(":feature:investing"))
-                api(project(":feature:business"))
-                api(project(":feature:wallet"))
-                api(project(":feature:collections"))
-                api(project(":feature:profile"))
-                api(project(":core:ui"))
                 // Koin
                 implementation(koin.bundles.all)
-                // Navigation
-                implementation(precompose.bundles.all)
             }
         }
     }

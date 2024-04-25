@@ -16,7 +16,7 @@ kotlin {
         iosSimulatorArm64()
     ).forEach { iosTarget ->
         iosTarget.binaries.framework {
-            baseName = "feature_home"
+            baseName = "feature_business"
             isStatic = true
         }
     }
@@ -27,7 +27,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.capitalism.empire.home"
+    namespace = "com.capitalism.empire.business"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
@@ -43,11 +43,6 @@ fun KotlinMultiplatformExtension.commonMainSourceSets() {
         commonMain {
             dependencies {
                 // Modules
-                api(project(":feature:investing"))
-                api(project(":feature:business"))
-                api(project(":feature:wallet"))
-                api(project(":feature:collections"))
-                api(project(":feature:profile"))
                 api(project(":core:ui"))
                 // Koin
                 implementation(koin.bundles.all)
