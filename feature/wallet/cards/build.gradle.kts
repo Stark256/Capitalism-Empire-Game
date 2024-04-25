@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
+
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
@@ -12,35 +14,22 @@ kotlin {
         iosX64(),
         iosArm64(),
         iosSimulatorArm64()
-    )
+    ).forEach { iosTarget ->
+        iosTarget.binaries.framework {
+            baseName = "feature_wallet_cards"
+            isStatic = true
+        }
+    }
 
     sourceSets {
-        commonMain.dependencies {
-            implementation(project(":core:ui"))
-            // Koin
-            implementation(libs.koin.core)
-            implementation(libs.koin.compose)
-            // Navigation
-            implementation(libs.precompose.core)
-            implementation(libs.precompose.viewmodel)
-            implementation(libs.precompose.koin)
-            // Resources
-            implementation(compose.ui)
-            implementation(compose.runtime)
-            implementation(compose.foundation)
-            implementation(compose.material3)
-            implementation(compose.components.resources)
-            implementation(compose.components.uiToolingPreview)
-        }
-        commonTest.dependencies {
-            implementation(libs.kotlin.test)
-        }
+        commonMainSourceSets()
     }
 }
 
 android {
     namespace = "com.capitalism.empire.cards"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
+
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
     }
@@ -50,5 +39,27 @@ android {
     }
     dependencies {
         debugImplementation(libs.compose.ui.tooling)
+    }
+}
+
+fun KotlinMultiplatformExtension.commonMainSourceSets() {
+    sourceSets {
+        commonMain {
+            dependencies {
+                // Module
+                api(project(":core:ui"))
+                // Compose
+                implementation(compose.ui)
+                implementation(compose.runtime)
+                implementation(compose.foundation)
+                implementation(compose.material3)
+                implementation(compose.components.resources)
+                implementation(compose.components.uiToolingPreview)
+                // Koin
+                implementation(koin.bundles.all)
+                // Navigation
+                implementation(precompose.bundles.all)
+            }
+        }
     }
 }

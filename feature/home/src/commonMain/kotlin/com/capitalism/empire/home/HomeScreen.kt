@@ -18,8 +18,8 @@ import com.capitalism.empire.investing.navigation.investingScreenGraph
 import com.capitalism.empire.investing.navigation.navigateToInvestingScreen
 import com.capitalism.empire.profile.navigation.navigateToProfileScreen
 import com.capitalism.empire.profile.navigation.profileScreenGraph
-import com.capitalism.empire.ui.BottomBar
-import com.capitalism.empire.ui.MenuItemsList
+import com.capitalism.empire.ui.bottomBar.BottomBar
+import com.capitalism.empire.ui.bottomBar.MenuItemsList
 import com.capitalism.empire.wallet.navigation.navigateToWalletScreen
 import com.capitalism.empire.wallet.navigation.walletScreenGraph
 import com.capitalism.empire.wallet.navigation.walletScreenNavigationRoute

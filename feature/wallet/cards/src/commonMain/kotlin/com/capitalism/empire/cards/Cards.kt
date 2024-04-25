@@ -1,278 +1,277 @@
 package com.capitalism.empire.cards
 
-import capitalismempire.feature.wallet.cards.generated.resources.Res
-import capitalismempire.feature.wallet.cards.generated.resources.*
+import com.capitalism.empire.ui.resources.images.ResourceImagesCards
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 
 @OptIn(ExperimentalResourceApi::class)
-object Cards {
+class Cards(resources: ResourceImagesCards) {
 
     val minimalCards = listOf(
         Card(
             type = CardType.MINIMAL,
-            drawable = Res.drawable.card_minimal_1
+            drawable = resources.minimal1
         ),
         Card(
             type = CardType.MINIMAL,
-            drawable = Res.drawable.card_minimal_2
+            drawable = resources.minimal2
         )
     )
 
     val designCards = listOf(
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_1
+            drawable = resources.design1
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_2
+            drawable = resources.design2
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_3
+            drawable = resources.design3
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_4
+            drawable = resources.design4
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_5
+            drawable = resources.design5
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_6
+            drawable = resources.design6
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_7
+            drawable = resources.design7
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_8
+            drawable = resources.design8
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_9
+            drawable = resources.design9
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_10
+            drawable = resources.design10
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_11
+            drawable = resources.design11
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_12
+            drawable = resources.design12
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_13
+            drawable = resources.design13
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_14
+            drawable = resources.design14
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_15
+            drawable = resources.design15
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_16
+            drawable = resources.design16
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_17
+            drawable = resources.design17
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_18
+            drawable = resources.design18
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_19
+            drawable = resources.design19
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_20
+            drawable = resources.design20
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_21
+            drawable = resources.design21
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_22
+            drawable = resources.design22
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_23
+            drawable = resources.design23
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_24
+            drawable = resources.design24
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_25
+            drawable = resources.design25
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_26
+            drawable = resources.design26
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_27
+            drawable = resources.design27
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_28
+            drawable = resources.design28
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_29
+            drawable = resources.design29
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_30
+            drawable = resources.design30
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_31
+            drawable = resources.design31
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_32
+            drawable = resources.design32
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_33
+            drawable = resources.design33
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_34
+            drawable = resources.design34
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_35
+            drawable = resources.design35
         ),
         Card(
             type = CardType.DESIGN,
-            drawable = Res.drawable.card_design_36
+            drawable = resources.design36
         )
     )
 
     val gradientCards = listOf(
         Card(
             type = CardType.GRADIENT,
-            drawable = Res.drawable.card_gradient_1
+            drawable = resources.gradient1
         ),
         Card(
             type = CardType.GRADIENT,
-            drawable = Res.drawable.card_gradient_2
+            drawable = resources.gradient2
         ),
         Card(
             type = CardType.GRADIENT,
-            drawable = Res.drawable.card_gradient_3
+            drawable = resources.gradient3
         ),
         Card(
             type = CardType.GRADIENT,
-            drawable = Res.drawable.card_gradient_4
+            drawable = resources.gradient4
         ),
         Card(
             type = CardType.GRADIENT,
-            drawable = Res.drawable.card_gradient_5
+            drawable = resources.gradient5
         ),
         Card(
             type = CardType.GRADIENT,
-            drawable = Res.drawable.card_gradient_6
+            drawable = resources.gradient6
         ),
         Card(
             type = CardType.GRADIENT,
-            drawable = Res.drawable.card_gradient_7
+            drawable = resources.gradient7
         ),
         Card(
             type = CardType.GRADIENT,
-            drawable = Res.drawable.card_gradient_8
+            drawable = resources.gradient8
         ),
         Card(
             type = CardType.GRADIENT,
-            drawable = Res.drawable.card_gradient_9
+            drawable = resources.gradient9
         ),
         Card(
             type = CardType.GRADIENT,
-            drawable = Res.drawable.card_gradient_10
+            drawable = resources.gradient10
         ),
         Card(
             type = CardType.GRADIENT,
-            drawable = Res.drawable.card_gradient_11
+            drawable = resources.gradient11
         ),
         Card(
             type = CardType.GRADIENT,
-            drawable = Res.drawable.card_gradient_12
+            drawable = resources.gradient12
         ),
         Card(
             type = CardType.GRADIENT,
-            drawable = Res.drawable.card_gradient_13
+            drawable = resources.gradient13
         ),
         Card(
             type = CardType.GRADIENT,
-            drawable = Res.drawable.card_gradient_14
+            drawable = resources.gradient14
         )
     )
 
     val dualCards = listOf(
         Card(
             type = CardType.DUAL,
-            drawable = Res.drawable.card_dual_1
+            drawable = resources.dual1
         ),
         Card(
             type = CardType.DUAL,
-            drawable = Res.drawable.card_dual_2
+            drawable = resources.dual2
         ),
         Card(
             type = CardType.DUAL,
-            drawable = Res.drawable.card_dual_3
+            drawable = resources.dual3
         ),
         Card(
             type = CardType.DUAL,
-            drawable = Res.drawable.card_dual_4
+            drawable = resources.dual4
         ),
         Card(
             type = CardType.DUAL,
-            drawable = Res.drawable.card_dual_5
+            drawable = resources.dual5
         ),
         Card(
             type = CardType.DUAL,
-            drawable = Res.drawable.card_dual_6
+            drawable = resources.dual6
         ),
         Card(
             type = CardType.DUAL,
-            drawable = Res.drawable.card_dual_7
+            drawable = resources.dual7
         ),
         Card(
             type = CardType.DUAL,
-            drawable = Res.drawable.card_dual_8
+            drawable = resources.dual8
         ),
         Card(
             type = CardType.DUAL,
-            drawable = Res.drawable.card_dual_9
+            drawable = resources.dual9
         ),
         Card(
             type = CardType.DUAL,
-            drawable = Res.drawable.card_dual_10
+            drawable = resources.dual10
         ),
         Card(
             type = CardType.DUAL,
-            drawable = Res.drawable.card_dual_11
+            drawable = resources.dual11
         ),
         Card(
             type = CardType.DUAL,
-            drawable = Res.drawable.card_dual_12
+            drawable = resources.dual12
         )
     )
 }

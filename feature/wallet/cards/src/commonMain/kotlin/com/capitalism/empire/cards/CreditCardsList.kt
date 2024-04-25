@@ -10,28 +10,28 @@ import androidx.compose.ui.Modifier
 fun CreditCardsList(
     modifier: Modifier = Modifier
 ) {
-    LazyColumn(
-        modifier = modifier
-    ) {
-        items(Cards.minimalCards) {card ->
-            CreditCard(
-                card = card
-            )
-        }
-        items(Cards.designCards) {card ->
-            CreditCard(
-                card = card
-            )
-        }
-        items(Cards.gradientCards) {card ->
-            CreditCard(
-                card = card
-            )
-        }
-        items(Cards.dualCards) {card ->
-            CreditCard(
-                card = card
-            )
-        }
-    }
+//    LazyColumn(
+//        modifier = modifier
+//    ) {
+//        items(Cards.minimalCards) {card ->
+//            CreditCard(
+//                card = card
+//            )
+//        }
+//        items(Cards.designCards) {card ->
+//            CreditCard(
+//                card = card
+//            )
+//        }
+//        items(Cards.gradientCards) {card ->
+//            CreditCard(
+//                card = card
+//            )
+//        }
+//        items(Cards.dualCards) {card ->
+//            CreditCard(
+//                card = card
+//            )
+//        }
+//    }
 }
