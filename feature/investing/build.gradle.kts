@@ -27,7 +27,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.capitalism.empire.investing"
+    namespace = "com.capitalism.empire.feature.investing"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()

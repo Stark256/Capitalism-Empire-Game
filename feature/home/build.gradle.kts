@@ -27,7 +27,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.capitalism.empire.home"
+    namespace = "com.capitalism.empire.feature.home"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()

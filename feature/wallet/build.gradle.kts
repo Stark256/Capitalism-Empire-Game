@@ -27,7 +27,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.capitalism.empire.wallet"
+    namespace = "com.capitalism.empire.feature.wallet"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
