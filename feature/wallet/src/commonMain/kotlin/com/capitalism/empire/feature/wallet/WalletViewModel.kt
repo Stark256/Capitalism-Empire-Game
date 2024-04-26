@@ -32,3 +32,4 @@ class WalletViewModel(
 
     // fun clicked
 }
+
