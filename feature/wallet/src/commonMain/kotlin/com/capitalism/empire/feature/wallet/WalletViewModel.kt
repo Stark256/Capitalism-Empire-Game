@@ -23,12 +23,46 @@ class WalletViewModel(
     // create action state
     // create ui state
 
-    // create data module for cards
+
 
     // create interface for card in data module
     // create card data class in data module
 
-    // create Card types: Default, Savings, Business, Brokerage, Credit(2-4)
+    // create AccountType: Default, Savings, Business, Brokerage, Credit(2-4)
+
+    /*
+
+    TODO
+    Screens
+    - Tips Dialog
+    - Card Settings Screen
+    - Add New Card Screen
+    - Card Design Screen
+
+    TODO
+    Data Classes
+    - CardDesignType enum class
+    - CardDesign (designId, designType, design)
+    - CardDesignListImpl() class and CardDesignList interface
+    - AccountType enum class
+
+    - WalletCard (id, accountType, cardDesignId, cardDesign)
+
+
+    TODO
+    - Add database
+
+
+    TODO
+    In Splash Screen Calculations
+    if(defaultCardSaved) {
+        useCard
+    } else {
+        initSacingDefaultCardIntoDB
+    }
+
+
+     */
 
     // fun clicked
 }
