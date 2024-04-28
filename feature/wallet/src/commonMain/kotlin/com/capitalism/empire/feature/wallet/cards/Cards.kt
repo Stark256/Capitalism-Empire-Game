@@ -1,6 +1,6 @@
 package com.capitalism.empire.cards
 
-import com.capitalism.empire.ui.resources.images.ResourceImagesCards
+import com.capitalism.empire.core.ui.resources.images.ResourceImagesCards
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 

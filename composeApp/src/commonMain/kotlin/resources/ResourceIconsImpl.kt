@@ -1,8 +1,8 @@
 package resources
 
-import com.capitalism.empire.ui.resources.ResourceIcons
-import com.capitalism.empire.ui.resources.icons.ResourceIconsCards
-import com.capitalism.empire.ui.resources.icons.ResourceIconsTabs
+import com.capitalism.empire.core.ui.resources.ResourceIcons
+import com.capitalism.empire.core.ui.resources.icons.ResourceIconsCards
+import com.capitalism.empire.core.ui.resources.icons.ResourceIconsTabs
 import resources.icons.ResourceIconsCardsImpl
 import resources.icons.ResourceIconsTabsImpl
 

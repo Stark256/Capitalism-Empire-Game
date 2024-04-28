@@ -1,6 +1,6 @@
-package com.capitalism.empire.collections.di
+package com.capitalism.empire.feature.collections.di
 
-import com.capitalism.empire.collections.CollectionsViewModel
+import com.capitalism.empire.feature.collections.CollectionsViewModel
 import org.koin.dsl.module
 
 val collectionsModule = module {

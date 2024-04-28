@@ -2,7 +2,7 @@ package resources.strings
 
 import capitalismempire.composeapp.generated.resources.Res
 import capitalismempire.composeapp.generated.resources.*
-import com.capitalism.empire.ui.resources.strings.ResourceStringsTabs
+import com.capitalism.empire.core.ui.resources.strings.ResourceStringsTabs
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.StringResource
 

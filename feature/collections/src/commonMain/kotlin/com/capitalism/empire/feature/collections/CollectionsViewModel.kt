@@ -1,4 +1,4 @@
-package com.capitalism.empire.collections
+package com.capitalism.empire.feature.collections
 
 import moe.tlaster.precompose.viewmodel.ViewModel
 

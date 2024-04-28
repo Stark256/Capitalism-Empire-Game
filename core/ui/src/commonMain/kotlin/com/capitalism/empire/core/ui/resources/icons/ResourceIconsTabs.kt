@@ -1,4 +1,4 @@
-package com.capitalism.empire.ui.resources.icons
+package com.capitalism.empire.core.ui.resources.icons
 
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.ExperimentalResourceApi

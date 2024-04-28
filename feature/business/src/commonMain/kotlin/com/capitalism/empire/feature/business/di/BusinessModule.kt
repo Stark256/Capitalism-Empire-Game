@@ -1,6 +1,6 @@
-package com.capitalism.empire.business.di
+package com.capitalism.empire.feature.business.di
 
-import com.capitalism.empire.business.BusinessViewModel
+import com.capitalism.empire.feature.business.BusinessViewModel
 import org.koin.dsl.module
 
 val businessModule = module {

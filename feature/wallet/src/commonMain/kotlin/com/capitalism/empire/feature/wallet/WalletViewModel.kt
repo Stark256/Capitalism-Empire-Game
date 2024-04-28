@@ -1,6 +1,6 @@
-package com.capitalism.empire.wallet
+package com.capitalism.empire.feature.wallet
 
-import com.capitalism.empire.ui.resources.Resources
+import com.capitalism.empire.core.ui.resources.Resources
 import moe.tlaster.precompose.viewmodel.ViewModel
 
 data class WalletUiState(

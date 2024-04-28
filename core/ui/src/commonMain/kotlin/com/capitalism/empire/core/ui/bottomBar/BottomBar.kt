@@ -1,4 +1,4 @@
-package com.capitalism.empire.ui.bottomBar
+package com.capitalism.empire.core.ui.bottomBar
 
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar

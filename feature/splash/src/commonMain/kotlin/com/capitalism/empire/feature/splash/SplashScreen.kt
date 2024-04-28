@@ -1,4 +1,4 @@
-package com.capitalism.empire.splash
+package com.capitalism.empire.feature.splash
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.Arrangement

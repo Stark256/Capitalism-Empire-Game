@@ -1,7 +1,7 @@
-package com.capitalism.empire.home
+package com.capitalism.empire.feature.home
 
-import com.capitalism.empire.ui.bottomBar.BottomBarMenuItem
-import com.capitalism.empire.ui.resources.Resources
+import com.capitalism.empire.core.ui.bottomBar.BottomBarMenuItem
+import com.capitalism.empire.core.ui.resources.Resources
 import moe.tlaster.precompose.viewmodel.ViewModel
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 

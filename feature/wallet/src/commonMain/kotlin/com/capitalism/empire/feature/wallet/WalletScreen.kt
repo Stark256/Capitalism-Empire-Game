@@ -1,4 +1,4 @@
-package com.capitalism.empire.wallet
+package com.capitalism.empire.feature.wallet
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -11,6 +11,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.capitalism.empire.cards.CreditCardsList
+import com.capitalism.empire.feature.wallet.WalletViewModel
 import moe.tlaster.precompose.koin.koinViewModel
 import org.jetbrains.compose.ui.tooling.preview.Preview
 

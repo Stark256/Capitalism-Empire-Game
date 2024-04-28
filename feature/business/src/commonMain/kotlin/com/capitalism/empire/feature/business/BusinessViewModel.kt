@@ -1,4 +1,4 @@
-package com.capitalism.empire.business
+package com.capitalism.empire.feature.business
 
 import moe.tlaster.precompose.viewmodel.ViewModel
 

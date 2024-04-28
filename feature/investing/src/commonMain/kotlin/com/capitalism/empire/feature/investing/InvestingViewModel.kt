@@ -1,4 +1,4 @@
-package com.capitalism.empire.investing
+package com.capitalism.empire.feature.investing
 
 import moe.tlaster.precompose.viewmodel.ViewModel
 

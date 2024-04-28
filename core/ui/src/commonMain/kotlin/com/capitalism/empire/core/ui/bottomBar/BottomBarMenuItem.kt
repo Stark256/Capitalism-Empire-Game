@@ -1,4 +1,4 @@
-package com.capitalism.empire.ui.bottomBar
+package com.capitalism.empire.core.ui.bottomBar
 
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.ExperimentalResourceApi

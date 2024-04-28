@@ -1,8 +1,8 @@
-package com.capitalism.empire.business.navigation
+package com.capitalism.empire.feature.business.navigation
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Composable
-import com.capitalism.empire.business.BusinessScreen
+import com.capitalism.empire.feature.business.BusinessScreen
 import moe.tlaster.precompose.navigation.NavOptions
 import moe.tlaster.precompose.navigation.Navigator
 import moe.tlaster.precompose.navigation.PopUpTo

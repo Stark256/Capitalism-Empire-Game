@@ -1,8 +1,8 @@
-package com.capitalism.empire.investing.navigation
+package com.capitalism.empire.feature.investing.navigation
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Composable
-import com.capitalism.empire.investing.InvestingScreen
+import com.capitalism.empire.feature.investing.InvestingScreen
 import moe.tlaster.precompose.navigation.NavOptions
 import moe.tlaster.precompose.navigation.Navigator
 import moe.tlaster.precompose.navigation.PopUpTo

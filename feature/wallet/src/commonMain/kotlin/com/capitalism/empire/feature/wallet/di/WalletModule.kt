@@ -1,6 +1,6 @@
-package com.capitalism.empire.wallet.di
+package com.capitalism.empire.feature.wallet.di
 
-import com.capitalism.empire.wallet.WalletViewModel
+import com.capitalism.empire.feature.wallet.WalletViewModel
 import org.koin.dsl.module
 
 val walletModule = module {

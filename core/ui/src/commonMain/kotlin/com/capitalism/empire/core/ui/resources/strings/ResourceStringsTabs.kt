@@ -1,4 +1,4 @@
-package com.capitalism.empire.ui.resources.strings
+package com.capitalism.empire.core.ui.resources.strings
 
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.StringResource

@@ -1,4 +1,4 @@
-package com.capitalism.empire.home
+package com.capitalism.empire.feature.home
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.slideInVertically
@@ -10,16 +10,16 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import com.capitalism.empire.business.navigation.businessScreenGraph
-import com.capitalism.empire.business.navigation.navigateToBusinessScreen
-import com.capitalism.empire.collections.navigation.collectionsScreenGraph
-import com.capitalism.empire.collections.navigation.navigateToCollectionsScreen
-import com.capitalism.empire.investing.navigation.investingScreenGraph
-import com.capitalism.empire.investing.navigation.navigateToInvestingScreen
-import com.capitalism.empire.profile.navigation.navigateToProfileScreen
-import com.capitalism.empire.profile.navigation.profileScreenGraph
-import com.capitalism.empire.ui.bottomBar.BottomBar
-import com.capitalism.empire.ui.bottomBar.MenuItemsList
+import com.capitalism.empire.feature.business.navigation.businessScreenGraph
+import com.capitalism.empire.feature.business.navigation.navigateToBusinessScreen
+import com.capitalism.empire.feature.collections.navigation.collectionsScreenGraph
+import com.capitalism.empire.feature.collections.navigation.navigateToCollectionsScreen
+import com.capitalism.empire.feature.investing.navigation.investingScreenGraph
+import com.capitalism.empire.feature.investing.navigation.navigateToInvestingScreen
+import com.capitalism.empire.feature.profile.navigation.navigateToProfileScreen
+import com.capitalism.empire.feature.profile.navigation.profileScreenGraph
+import com.capitalism.empire.core.ui.bottomBar.BottomBar
+import com.capitalism.empire.core.ui.bottomBar.MenuItemsList
 import com.capitalism.empire.wallet.navigation.navigateToWalletScreen
 import com.capitalism.empire.wallet.navigation.walletScreenGraph
 import com.capitalism.empire.wallet.navigation.walletScreenNavigationRoute

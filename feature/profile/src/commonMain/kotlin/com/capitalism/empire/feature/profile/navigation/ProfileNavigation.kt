@@ -1,8 +1,8 @@
-package com.capitalism.empire.profile.navigation
+package com.capitalism.empire.feature.profile.navigation
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Composable
-import com.capitalism.empire.profile.ProfileScreen
+import com.capitalism.empire.feature.profile.ProfileScreen
 import moe.tlaster.precompose.navigation.NavOptions
 import moe.tlaster.precompose.navigation.Navigator
 import moe.tlaster.precompose.navigation.PopUpTo

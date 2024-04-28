@@ -2,7 +2,7 @@ package resources.icons
 
 import capitalismempire.composeapp.generated.resources.Res
 import capitalismempire.composeapp.generated.resources.*
-import com.capitalism.empire.ui.resources.icons.ResourceIconsCards
+import com.capitalism.empire.core.ui.resources.icons.ResourceIconsCards
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 

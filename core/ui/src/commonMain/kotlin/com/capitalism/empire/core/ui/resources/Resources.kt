@@ -1,4 +1,4 @@
-package com.capitalism.empire.ui.resources
+package com.capitalism.empire.core.ui.resources
 
 interface Resources {
     val icons: ResourceIcons

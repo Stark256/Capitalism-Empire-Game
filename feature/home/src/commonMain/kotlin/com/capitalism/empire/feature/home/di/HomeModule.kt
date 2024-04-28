@@ -1,6 +1,6 @@
-package com.capitalism.empire.home.di
+package com.capitalism.empire.feature.home.di
 
-import com.capitalism.empire.home.HomeViewModel
+import com.capitalism.empire.feature.home.HomeViewModel
 import org.koin.dsl.module
 
 val homeModule = module {

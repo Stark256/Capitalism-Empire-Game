@@ -2,7 +2,7 @@ package resources.images
 
 import capitalismempire.composeapp.generated.resources.Res
 import capitalismempire.composeapp.generated.resources.*
-import com.capitalism.empire.ui.resources.images.ResourceImagesCards
+import com.capitalism.empire.core.ui.resources.images.ResourceImagesCards
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 

@@ -2,7 +2,7 @@ package com.capitalism.empire.wallet.navigation
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Composable
-import com.capitalism.empire.wallet.WalletScreen
+import com.capitalism.empire.feature.wallet.WalletScreen
 import moe.tlaster.precompose.navigation.NavOptions
 import moe.tlaster.precompose.navigation.Navigator
 import moe.tlaster.precompose.navigation.PopUpTo

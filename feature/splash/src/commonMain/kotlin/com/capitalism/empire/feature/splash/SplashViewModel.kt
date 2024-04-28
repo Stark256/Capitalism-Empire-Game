@@ -1,4 +1,4 @@
-package com.capitalism.empire.splash
+package com.capitalism.empire.feature.splash
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow

@@ -1,12 +1,12 @@
 package di
 
-import com.capitalism.empire.business.di.businessModule
-import com.capitalism.empire.collections.di.collectionsModule
-import com.capitalism.empire.home.di.homeModule
-import com.capitalism.empire.investing.di.investingModule
-import com.capitalism.empire.profile.di.profileModule
-import com.capitalism.empire.splash.di.splashModule
-import com.capitalism.empire.wallet.di.walletModule
+import com.capitalism.empire.feature.business.di.businessModule
+import com.capitalism.empire.feature.collections.di.collectionsModule
+import com.capitalism.empire.feature.home.di.homeModule
+import com.capitalism.empire.feature.investing.di.investingModule
+import com.capitalism.empire.feature.profile.di.profileModule
+import com.capitalism.empire.feature.splash.di.splashModule
+import com.capitalism.empire.feature.wallet.di.walletModule
 import org.koin.core.module.Module
 import org.koin.dsl.KoinAppDeclaration
 

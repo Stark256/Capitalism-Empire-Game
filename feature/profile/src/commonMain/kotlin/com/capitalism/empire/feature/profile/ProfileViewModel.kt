@@ -1,4 +1,4 @@
-package com.capitalism.empire.profile
+package com.capitalism.empire.feature.profile
 
 import moe.tlaster.precompose.viewmodel.ViewModel
 

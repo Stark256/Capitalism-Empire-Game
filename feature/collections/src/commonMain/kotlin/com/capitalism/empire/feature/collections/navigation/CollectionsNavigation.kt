@@ -1,8 +1,8 @@
-package com.capitalism.empire.collections.navigation
+package com.capitalism.empire.feature.collections.navigation
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Composable
-import com.capitalism.empire.collections.CollectionsScreen
+import com.capitalism.empire.feature.collections.CollectionsScreen
 import moe.tlaster.precompose.navigation.NavOptions
 import moe.tlaster.precompose.navigation.Navigator
 import moe.tlaster.precompose.navigation.PopUpTo

@@ -1,4 +1,4 @@
-package com.capitalism.empire.business
+package com.capitalism.empire.feature.business
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import com.capitalism.empire.feature.business.BusinessViewModel
 import moe.tlaster.precompose.koin.koinViewModel
 
 @Composable
