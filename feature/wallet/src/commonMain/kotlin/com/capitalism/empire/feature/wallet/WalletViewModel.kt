@@ -24,11 +24,10 @@ class WalletViewModel(
     // create ui state
 
 
-
     // create interface for card in data module
     // create card data class in data module
 
-    // create AccountType: Default, Savings, Business, Brokerage, Credit(2-4)
+    // create AccountType: Checking, Savings, Business, Brokerage, Deposit, Credit(3)
 
     /*
 
@@ -62,8 +61,15 @@ class WalletViewModel(
     }
 
 
+
+    // TODO
+     UseCases(resources, domain)
+     Domain(localDataSource, remoteDataSource)
+     DataSource -> db or API
+
      */
 
     // fun clicked
+
 }
 
