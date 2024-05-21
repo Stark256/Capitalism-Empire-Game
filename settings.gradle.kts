@@ -30,6 +30,8 @@ dependencyResolutionManagement {
 include(":composeApp")
 // Core
 include(":core:ui")
+// UI
+include(":ui:wallet")
 // Data
 include(":data:wallet")
 // Domain

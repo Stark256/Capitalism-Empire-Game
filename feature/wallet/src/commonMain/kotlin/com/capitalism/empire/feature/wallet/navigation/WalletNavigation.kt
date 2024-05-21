@@ -1,4 +1,4 @@
-package com.capitalism.empire.wallet.navigation
+package com.capitalism.empire.feature.wallet.navigation
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Composable

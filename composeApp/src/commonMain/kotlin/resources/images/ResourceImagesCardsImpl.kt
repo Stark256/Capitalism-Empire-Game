@@ -40,10 +40,6 @@ object ResourceImagesCardsImpl: ResourceImagesCards {
     override val design30: DrawableResource = Res.drawable.card_design_30
     override val design31: DrawableResource = Res.drawable.card_design_31
     override val design32: DrawableResource = Res.drawable.card_design_32
-    override val design33: DrawableResource = Res.drawable.card_design_33
-    override val design34: DrawableResource = Res.drawable.card_design_34
-    override val design35: DrawableResource = Res.drawable.card_design_35
-    override val design36: DrawableResource = Res.drawable.card_design_36
     override val dual1: DrawableResource = Res.drawable.card_dual_1
     override val dual2: DrawableResource = Res.drawable.card_dual_2
     override val dual3: DrawableResource = Res.drawable.card_dual_3
@@ -68,8 +64,6 @@ object ResourceImagesCardsImpl: ResourceImagesCards {
     override val gradient10: DrawableResource = Res.drawable.card_gradient_10
     override val gradient11: DrawableResource = Res.drawable.card_gradient_11
     override val gradient12: DrawableResource = Res.drawable.card_gradient_12
-    override val gradient13: DrawableResource = Res.drawable.card_gradient_13
-    override val gradient14: DrawableResource = Res.drawable.card_gradient_14
     override val minimal1: DrawableResource = Res.drawable.card_minimal_1
     override val minimal2: DrawableResource = Res.drawable.card_minimal_2
 }

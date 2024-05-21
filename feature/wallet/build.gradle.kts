@@ -44,6 +44,9 @@ fun KotlinMultiplatformExtension.commonMainSourceSets() {
             dependencies {
                 // Modules
                 api(project(":core:ui"))
+                implementation(project(":ui:wallet"))
+                implementation(project(":data:wallet"))
+                implementation(project(":domain:wallet"))
                 // Koin
                 implementation(koin.bundles.all)
                 // Navigation

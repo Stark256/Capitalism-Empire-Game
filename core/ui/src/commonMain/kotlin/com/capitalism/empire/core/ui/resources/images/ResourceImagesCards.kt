@@ -37,10 +37,6 @@ interface ResourceImagesCards {
     val design30: DrawableResource
     val design31: DrawableResource
     val design32: DrawableResource
-    val design33: DrawableResource
-    val design34: DrawableResource
-    val design35: DrawableResource
-    val design36: DrawableResource
     val dual1: DrawableResource
     val dual2: DrawableResource
     val dual3: DrawableResource
@@ -65,8 +61,6 @@ interface ResourceImagesCards {
     val gradient10: DrawableResource
     val gradient11: DrawableResource
     val gradient12: DrawableResource
-    val gradient13: DrawableResource
-    val gradient14: DrawableResource
     val minimal1: DrawableResource
     val minimal2: DrawableResource
 

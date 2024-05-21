@@ -146,22 +146,6 @@ class Cards(resources: ResourceImagesCards) {
         Card(
             designType = CardDesignType.DESIGN,
             drawable = resources.design32
-        ),
-        Card(
-            designType = CardDesignType.DESIGN,
-            drawable = resources.design33
-        ),
-        Card(
-            designType = CardDesignType.DESIGN,
-            drawable = resources.design34
-        ),
-        Card(
-            designType = CardDesignType.DESIGN,
-            drawable = resources.design35
-        ),
-        Card(
-            designType = CardDesignType.DESIGN,
-            drawable = resources.design36
         )
     )
 
@@ -213,14 +197,6 @@ class Cards(resources: ResourceImagesCards) {
         Card(
             designType = CardDesignType.GRADIENT,
             drawable = resources.gradient12
-        ),
-        Card(
-            designType = CardDesignType.GRADIENT,
-            drawable = resources.gradient13
-        ),
-        Card(
-            designType = CardDesignType.GRADIENT,
-            drawable = resources.gradient14
         )
     )
 

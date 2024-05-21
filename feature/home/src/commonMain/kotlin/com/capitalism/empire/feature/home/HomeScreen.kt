@@ -20,9 +20,9 @@ import com.capitalism.empire.feature.profile.navigation.navigateToProfileScreen
 import com.capitalism.empire.feature.profile.navigation.profileScreenGraph
 import com.capitalism.empire.core.ui.bottomBar.BottomBar
 import com.capitalism.empire.core.ui.bottomBar.MenuItemsList
-import com.capitalism.empire.wallet.navigation.navigateToWalletScreen
-import com.capitalism.empire.wallet.navigation.walletScreenGraph
-import com.capitalism.empire.wallet.navigation.walletScreenNavigationRoute
+import com.capitalism.empire.feature.wallet.navigation.navigateToWalletScreen
+import com.capitalism.empire.feature.wallet.navigation.walletScreenGraph
+import com.capitalism.empire.feature.wallet.navigation.walletScreenNavigationRoute
 import moe.tlaster.precompose.koin.koinViewModel
 import moe.tlaster.precompose.navigation.NavHost
 import moe.tlaster.precompose.navigation.Navigator
