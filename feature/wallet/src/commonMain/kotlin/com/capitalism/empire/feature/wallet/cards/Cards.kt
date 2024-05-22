@@ -1,11 +1,11 @@
 package com.capitalism.empire.cards
 
-import com.capitalism.empire.core.ui.resources.images.ResourceImagesCards
+import com.capitalism.empire.core.ui.resources.images.ResourceImagesWallet
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 
 @OptIn(ExperimentalResourceApi::class)
-class Cards(resources: ResourceImagesCards) {
+class Cards(resources: ResourceImagesWallet) {
 
     val minimalCards = listOf(
         Card(

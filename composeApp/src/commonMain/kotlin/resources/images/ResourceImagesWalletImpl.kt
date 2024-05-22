@@ -2,12 +2,12 @@ package resources.images
 
 import capitalismempire.composeapp.generated.resources.Res
 import capitalismempire.composeapp.generated.resources.*
-import com.capitalism.empire.core.ui.resources.images.ResourceImagesCards
+import com.capitalism.empire.core.ui.resources.images.ResourceImagesWallet
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 
 @OptIn(ExperimentalResourceApi::class)
-object ResourceImagesCardsImpl: ResourceImagesCards {
+object ResourceImagesWalletImpl: ResourceImagesWallet {
     override val design1: DrawableResource = Res.drawable.card_design_1
     override val design2: DrawableResource = Res.drawable.card_design_2
     override val design3: DrawableResource = Res.drawable.card_design_3

@@ -1,9 +1,9 @@
 package resources
 
 import com.capitalism.empire.core.ui.resources.ResourceImages
-import com.capitalism.empire.core.ui.resources.images.ResourceImagesCards
-import resources.images.ResourceImagesCardsImpl
+import com.capitalism.empire.core.ui.resources.images.ResourceImagesWallet
+import resources.images.ResourceImagesWalletImpl
 
 object ResourceImagesImpl: ResourceImages {
-    override val cards: ResourceImagesCards = ResourceImagesCardsImpl
+    override val cards: ResourceImagesWallet = ResourceImagesWalletImpl
 }

@@ -4,7 +4,7 @@ import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 
 @OptIn(ExperimentalResourceApi::class)
-interface ResourceImagesCards {
+interface ResourceImagesWallet {
     val design1: DrawableResource
     val design2: DrawableResource
     val design3: DrawableResource
@@ -63,5 +63,4 @@ interface ResourceImagesCards {
     val gradient12: DrawableResource
     val minimal1: DrawableResource
     val minimal2: DrawableResource
-
 }
