@@ -5,6 +5,7 @@ import org.jetbrains.compose.resources.ExperimentalResourceApi
 
 @OptIn(ExperimentalResourceApi::class)
 interface ResourceImagesWallet {
+    val design32: DrawableResource
     val design1: DrawableResource
     val design2: DrawableResource
     val design3: DrawableResource
@@ -36,7 +37,6 @@ interface ResourceImagesWallet {
     val design29: DrawableResource
     val design30: DrawableResource
     val design31: DrawableResource
-    val design32: DrawableResource
     val dual1: DrawableResource
     val dual2: DrawableResource
     val dual3: DrawableResource

@@ -12,8 +12,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
@@ -22,18 +20,21 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.vector.rememberVectorPainter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.capitalism.empire.data.wallet.models.CardUIDetails
+import org.jetbrains.compose.resources.DrawableResource
+import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
 
+@OptIn(ExperimentalResourceApi::class)
 @Composable
 fun WalletCard(
     cardDetails: CardUIDetails,
+    iconCardSettings: DrawableResource,
     onCardSettingsClicked: (Int) -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -47,7 +48,7 @@ fun WalletCard(
     ) {
         Box {
             Image(
-                painter = painterResource(id = cardDetails.cardBackground),
+                painter = painterResource(cardDetails.cardBackground),
                 contentDescription = null,
                 contentScale = ContentScale.FillBounds,
                 modifier = Modifier.matchParentSize()
@@ -70,7 +71,7 @@ fun WalletCard(
 
                     // Card Settings Button
                     Icon(
-                        painter = rememberVectorPainter(Icons.Default.Settings),
+                        painter = painterResource(iconCardSettings),
                         contentDescription = null,
                         modifier = Modifier
                             .size(24.dp)
@@ -125,7 +126,7 @@ fun WalletCard(
                     )
 
                     Image(
-                        painter = painterResource(id = cardDetails.cardIcon),
+                        painter = painterResource(cardDetails.cardIcon),
                         contentDescription = null,
                         modifier = Modifier
                             .size(48.dp)

@@ -1,9 +1,19 @@
 package com.capitalism.empire.core.ui.resources
 
-import com.capitalism.empire.core.ui.resources.icons.ResourceIconsWallet
-import com.capitalism.empire.core.ui.resources.icons.ResourceIconsTabs
+import org.jetbrains.compose.resources.DrawableResource
+import org.jetbrains.compose.resources.ExperimentalResourceApi
 
+@OptIn(ExperimentalResourceApi::class)
 interface ResourceIcons {
-    val tabs: ResourceIconsTabs
-    val wallet: ResourceIconsWallet
+    // Bottom Bar
+    val business: DrawableResource
+    val collections: DrawableResource
+    val investing: DrawableResource
+    val profile: DrawableResource
+    val wallet: DrawableResource
+
+    // Wallet
+    val mastercard: DrawableResource
+    val visa_black: DrawableResource
+    val visa_white: DrawableResource
 }

@@ -9,8 +9,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AddCircle
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
@@ -19,12 +17,16 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.vector.rememberVectorPainter
 import androidx.compose.ui.unit.dp
+import org.jetbrains.compose.resources.DrawableResource
+import org.jetbrains.compose.resources.ExperimentalResourceApi
+import org.jetbrains.compose.resources.painterResource
 
+@OptIn(ExperimentalResourceApi::class)
 @Composable
 fun NewCardButton(
     onAddNewCardClicked: () -> Unit,
+    iconAddNewCard: DrawableResource,
     modifier: Modifier = Modifier,
 ) {
     Card(
@@ -46,10 +48,9 @@ fun NewCardButton(
             contentAlignment = Alignment.Center
         ) {
             Icon(
-                painter = rememberVectorPainter(Icons.Default.AddCircle),
+                painter = painterResource(iconAddNewCard),
                 contentDescription = null,
                 modifier = Modifier.size(48.dp)
-
             )
         }
     }
