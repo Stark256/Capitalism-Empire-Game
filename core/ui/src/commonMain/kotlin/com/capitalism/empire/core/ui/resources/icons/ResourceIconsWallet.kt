@@ -8,4 +8,7 @@ interface ResourceIconsWallet {
     val mastercard: DrawableResource
     val visa_black: DrawableResource
     val visa_white: DrawableResource
+    val add_circle: DrawableResource
+    val transfer: DrawableResource
+    val settings: DrawableResource
 }

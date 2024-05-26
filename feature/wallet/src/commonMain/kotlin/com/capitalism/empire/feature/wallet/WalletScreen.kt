@@ -113,7 +113,7 @@ fun WalletContent(
                 is CardUi.Card -> {
                     WalletCard(
                         cardDetails = cardUI.cardDetails,
-                        iconCardSettings = ,
+                        iconCardSettings = icons.settings,
                         onCardSettingsClicked = {
                             onCardSettingsClicked.invoke(cardUI.cardDetails)
                         }
@@ -121,7 +121,7 @@ fun WalletContent(
                 }
                 is CardUi.AddNewCard -> {
                     NewCardButton(
-                        iconAddNewCard = ,
+                        iconAddNewCard = icons.add_circle,
                         onAddNewCardClicked = {
                             onAddNewCardClicked.invoke()
                         }

@@ -19,4 +19,7 @@ object ResourceIconsImpl: ResourceIcons {
     override val mastercard: DrawableResource = Res.drawable.ic_mastercard
     override val visa_black: DrawableResource = Res.drawable.ic_visa_black
     override val visa_white: DrawableResource = Res.drawable.ic_visa_white
+    override val add_circle: DrawableResource = Res.drawable.ic_add_circle
+    override val transfer: DrawableResource = Res.drawable.ic_transfer
+    override val settings: DrawableResource = Res.drawable.ic_settings
 }
